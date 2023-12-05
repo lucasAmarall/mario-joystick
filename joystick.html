@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Document</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-database-compat.js"></script>
+</head>
+
+<body>
+  <div class="turn">
+    <p>Please rotate your phone</p>
+  </div>
+  <div class="box">
+    <div class="box__pad box__pad--secondary">
+      <div class="box__button-row box__button-row--top">
+        <div class="box__circle box__circle--purple" data-action="left"></div>
+        <div class="box__circle box__circle--orange" data-action="up"></div>
+
+      </div>
+      <div class="box__button-row box__button-row--bottom">
+        <div class="box__circle box__circle--pink" data-action="down"></div>
+        <div class="box__circle box__circle--cyan" data-action="right"></div>
+      </div>
+    </div>
+    <div class="box__pad box__pad--inclined">
+      <div class="box__button-row box__button-row--top box__button-row--inclined">
+        <div class="box__circle box__circle--green" data-action="y"></div>
+        <div class="box__circle box__circle--blue" data-action="x"></div>
+      </div>
+      <div class="box__button-row box__button-row--bottom box__button-row--inclined">
+        <div class="box__circle box__circle--yellow" data-action="b"></div>
+        <div class="box__circle box__circle--red" data-action="a"></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

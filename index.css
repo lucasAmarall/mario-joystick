@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  outline: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  background-color: #B7B3A8;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (orientation: landscape) {
+  .box {
+    display: flex !important;
+  }
+
+  .turn {
+    display: none !important;
+  }
+}
+
+.turn {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+
+
+.box {
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  display: none;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box__pad {
+  background: #575F61;
+  width: 45vw;
+  height: 45vw;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box__pad--secondary {
+  width: 30vw;
+  height: 30vw;
+  transform: rotate(-45deg);
+  background-color: #B7B3A8;
+  box-shadow: 0 0 12.5px #666 inset, 0 0 3px #666;
+}
+
+.box__pad--inclined {
+  transform: rotate(-30deg)
+}
+
+
+.box__button-row {
+  width: 70%;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #B7B3A8;
+  align-items: center;
+  padding: 5px;
+}
+
+.box__button-row--top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.box__button-row--bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.box__circle {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: black;
+  border-left-color: black;
+  border-bottom-color: white;
+  border-right-color: white;
+  transform: rotate(35deg);
+  outline: none;
+  transition: .1s all ease-in-out;
+}
+
+.box__circle--pressing {
+  transform: rotate(35deg) translateY(4px);
+}
+
+.box__circle--green {
+  background-color: #048E64;
+}
+
+.box__circle--blue {
+  background-color: #5C80AF;
+}
+
+.box__circle--yellow {
+  background-color: #FFBC54;
+}
+
+.box__circle--red {
+  background-color: #D43644;
+}
+
+.box__circle--purple {
+  background-color: #8E44AD;
+}
+
+.box__circle--orange {
+  background-color: #E67E22;
+}
+
+.box__circle--pink {
+  background-color: #FF3492;
+}
+
+.box__circle--cyan {
+  background-color: #3498DB;
+}
